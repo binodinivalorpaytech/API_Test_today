@@ -1,0 +1,8 @@
+{
+  "status": "#boolean",
+  "message": "#string",
+  "code": "#number",
+  "storeInfo": "#object",
+  "mpId": "#number",
+  "newUserId": "#number"
+}

@@ -1,0 +1,81 @@
+{
+  "legalName": "EPX Store 6a",
+  "dbaName": "EPX Store 6a",
+  "firstName": "MERCHANT",
+  "lastName": "EPX Store 6a",
+  "emailId": "name@protonmail.com",
+  "userName": "merchat5310823",
+  "mobile": "8327287578",
+  "legalAddress": "Test Address",
+  "legalCity": "CLIFFSIDE PARK",
+  "legalState": "NY",
+  "legalCountry": "US",
+  "legalZipCode": "07010",
+  "legalTimezone": "EST",
+  "role": "10",
+  "userType": "4",
+  "isTxnAllowed": "1",
+  "selectedState": "NY",
+  "programType": "1",
+  "processor": "4",
+  "rollUp": "0",
+  "storeData": [
+    {
+      "storeName": "EL TRI MX RESTA Add",
+      "storeAddress": "20987 N John Wayne Pkwy",
+      "storeCity": "MARICOPA",
+      "storeState": "AZ",
+      "storeCountry": "US",
+      "storeZipCode": "85138",
+      "storeTimezone": "EST",
+      "superVisorName": "EL TRI MX RESTA",
+      "superVisorEmail": "office@valorpaytech.com",
+      "superVisorContact": "5208396263",
+      "mccCode": "1761",
+      "epiData": [
+        {
+          "device": "139",
+          "deviceType": "Soft Pos",
+          "epiLabel": "Virtual Terminal",
+          "features": {
+            "tip": {
+              "enabled": false,
+              "value": [5, 10, 15, 20]
+            },
+            "surcharge": {
+              "enabled": false,
+              "value": "4.00"
+            },
+            "tax": {
+              "enabled": false,
+              "value": "0"
+            }
+          },
+          "processor": "4",
+          "processorData": [
+            {
+              "midFDBuy": "RCTST1000089931",
+              "midFDBuy1": "",
+              "groupIdFDBuy": "20001",
+              "groupIdFDBuy1": "",
+              "termNoFDBuy": "11111111",
+              "termNoFDBuy1": "",
+              "websiteFDBuy": "buypass.com",
+              "websiteFDBuy1": "",
+              "EBTcash": "0",
+              "EBTfood": "0",
+              "EBTfood1": "0",
+              "EBTcash1": "0",
+              "surchargeIndicator": "0",
+              "surchargePercentage": "3.000",
+              "EbtNoFDBuy": "0",
+              "EbtNoFDBuy1": "0",
+              "label": "UNIVERSAL ROOFING SPECIALISTS",
+              "programType": "surcharge"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

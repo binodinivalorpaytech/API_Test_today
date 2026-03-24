@@ -1,0 +1,19 @@
+{
+  "legalName":           "Valor Store",
+  "dbaName":             "Valor Store LLC",
+  "firstName":           "MERCHANT",
+  "mobile":              "8327287578",
+  "legalZipCode":        "07010",
+  "surchargeEnabled":    true,
+  "surchargePercentage": "3.000",
+  "surchargeIndicator":  1,
+  "mid":                 "887000003191",
+  "vNumber":             "75021670",
+  "storeNo":             "5999",
+  "termNo":              "1515",
+  "binnumber":           "999991",
+  "industry":            "Retail",
+  "agentBank":           "000000",
+  "tid3":                "TID001",
+  "clientID":            "CLIENT001"
+}
