@@ -1,0 +1,31 @@
+{
+  "userName": "test3",
+  "emailId": "test@valorpaytech.com",
+  "firstName": "MERCHANT",
+  "lastName": "PORTAL",
+  "mobile": 5287963652,
+  "merchantUserName": "merchanttest",
+  "selectedEpi": [
+    2319919434,
+    2319917642
+  ],
+  "selectedStore": [
+    18958,
+    23277
+  ],
+  "moduleList": [
+    3,
+    14,
+    17,
+    18,
+    20,
+    25,
+    29
+  ],
+  "featureList": [
+    51,
+    52,
+    53
+  ],
+  "associate_user_name": "BinodiniISO"
+}

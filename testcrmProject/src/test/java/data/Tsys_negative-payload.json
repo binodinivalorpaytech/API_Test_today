@@ -1,0 +1,19 @@
+{
+  "legalName":           "",
+  "dbaName":             "",
+  "firstName":           "",
+  "mobile":              "",
+  "legalZipCode":        "",
+  "surchargeEnabled":    false,
+  "surchargePercentage": "0.000",
+  "surchargeIndicator":  0,
+  "mid":                 "",
+  "vNumber":             "",
+  "storeNo":             "",
+  "termNo":              "",
+  "binnumber":           "",
+  "industry":            "",
+  "agentBank":           "",
+  "tid3":                "",
+  "clientID":            ""
+}

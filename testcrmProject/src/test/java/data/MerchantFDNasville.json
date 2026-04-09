@@ -1,0 +1,164 @@
+{
+  "basePayload": {
+    "userName": "",
+    "emailId": "",
+    "legalName": "EPX Store FD Nashville",
+    "dbaName": "EPX Store FD Nashville",
+    "firstName": "MERCHANT",
+    "lastName": "EPX Store FD Nashville",
+    "mobile": "8327287578",
+    "legalAddress": "Test Address",
+    "legalCity": "CLIFFSIDE PARK",
+    "legalState": "NY",
+    "legalCountry": "US",
+    "legalZipCode": "07010",
+    "legalTimezone": "EST",
+    "role": "10",
+    "userType": "4",
+    "isTxnAllowed": "1",
+    "selectedState": "NY",
+    "programType": "2",
+    "processor": "5",
+    "rollUp": "0",
+    "storeData": [
+      {
+        "storeName": "EL TRI MX RESTA Add",
+        "storeAddress": "20987 N John Wayne Pkwy",
+        "storeCity": "MARICOPA",
+        "storeState": "AZ",
+        "storeCountry": "US",
+        "storeZipCode": "50001",
+        "storeTimezone": "EST",
+        "superVisorName": "EL TRI MX REST",
+        "superVisorEmail": "office@valorpaytech.com",
+        "superVisorContact": "5208396263",
+        "mccCode": "1761",
+        "epiData": [
+          {
+            "device": "139",
+            "deviceType": "Soft Pos",
+            "epiLabel": "Virtual Terminal",
+            "features": {
+              "tip":       { "enabled": false, "value": [5, 10, 15, 20] },
+              "surcharge": { "enabled": false, "value": "4.00" },
+              "tax":       { "enabled": false, "value": "0" }
+            },
+            "processor": "5",
+            "processorData": [
+              {
+                "midFDNash":           "",
+                "midFDNash1":          "RCTST1000089931",
+                "groupIdFDNash":       "",
+                "groupIdFDNash1":      "10001",
+                "termNoFDNash":        "",
+                "termNoFDNash1":       "11111111",
+                "websiteFDNash":       "",
+                "websiteFDNash1":      "buypass.com",
+                "EBTcash":             "0",
+                "EBTcash1":            "0",
+                "EBTfood":             "0",
+                "EBTfood1":            "0",
+                "EbtNoFDNash":         "0",
+                "EbtNoFDNash1":        "0",
+                "surchargeIndicator":  "0",
+                "surchargePercentage": "",
+                "label":               "MERCHANT PORTAL LOGIN",
+                "programType":         "surcharge"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "positive": {
+    "TC_POS_002_tipEnabled": {
+      "tip_enabled": true,
+      "tip_value": [5, 10, 15, 20]
+    },
+    "TC_POS_003_surchargeAndTax": {
+      "surcharge_enabled":   true,
+      "surcharge_value":     "3.50",
+      "tax_enabled":         true,
+      "tax_value":           "8.5",
+      "surchargeIndicator":  "1",
+      "surchargePercentage": "3.50"
+    },
+    "TC_POS_004_ebtEnabled": {
+      "EBTcash":  "1",
+      "EBTcash1": "1",
+      "EBTfood":  "1",
+      "EBTfood1": "1"
+    },
+    "TC_POS_005_multiStore": {
+      "secondStore": {
+        "storeName":         "EL TRI MX RESTA Branch 2",
+        "storeAddress":      "100 Second Ave",
+        "storeCity":         "PHOENIX",
+        "storeState":        "AZ",
+        "storeCountry":      "US",
+        "storeZipCode":      "85001",
+        "storeTimezone":     "MST",
+        "superVisorName":    "Branch 2 Suprvsr",
+        "superVisorEmail":   "branch2@valorpaytech.com",
+        "superVisorContact": "5208396264",
+        "mccCode":           "1761",
+        "epiData": [
+          {
+            "device":     "139",
+            "deviceType": "Soft Pos",
+            "epiLabel":   "Virtual Terminal",
+            "features": {
+              "tip":       { "enabled": false, "value": [5, 10, 15, 20] },
+              "surcharge": { "enabled": false, "value": "4.00" },
+              "tax":       { "enabled": false, "value": "0" }
+            },
+            "processor": "5",
+            "processorData": [
+              {
+                "midFDNash":           "",
+                "midFDNash1":          "RCTST1000089934",
+                "groupIdFDNash":       "",
+                "groupIdFDNash1":      "10002",
+                "termNoFDNash":        "",
+                "termNoFDNash1":       "22222222",
+                "websiteFDNash":       "",
+                "websiteFDNash1":      "buypass.com",
+                "EBTcash":             "0",
+                "EBTcash1":            "0",
+                "EBTfood":             "0",
+                "EBTfood1":            "0",
+                "EbtNoFDNash":         "0",
+                "EbtNoFDNash1":        "0",
+                "surchargeIndicator":  "0",
+                "surchargePercentage": "",
+                "label":               "MERCHANT PORTAL LOGIN",
+                "programType":         "surcharge"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+
+  "negative": {
+    "TC_NEG_003_invalidEmail":        { "emailId":       "not-an-email"                },
+    "TC_NEG_004_duplicateUser":       { "userName":      "DuplicateUserFixed",
+                                        "emailId":       "duplicate_fixed@valorpaytech.com" },
+    "TC_NEG_005_nonNumericMobile":    { "mobile":        "ABCD12345"                   },
+    "TC_NEG_006_invalidState":        { "legalState":    "XX"                          },
+    "TC_NEG_007_shortZipCode":        { "legalZipCode":  "070"                         },
+    "TC_NEG_008_emptyStoreData":      { "storeData":     []                            },
+    "TC_NEG_010_invalidProcessor":    { "processor":     "999"                         },
+    "TC_NEG_011_invalidUserType":     { "userType":      "99"                          },
+    "TC_NEG_014_surchargeOutOfRange": { "surcharge_enabled": true,
+                                        "surcharge_value":   "100.00"                  },
+    "TC_NEG_015_nonNumericMcc":       { "mccCode":       "ABCD"                        },
+    "TC_NEG_016_invalidTxnAllowed":   { "isTxnAllowed":  "5"                           },
+    "TC_NEG_018_sqlInjection":        { "legalName":     "'; DROP TABLE merchants;--"  },
+    "TC_NEG_019_invalidCountry":      { "legalCountry":  "ZZ"                          },
+    "TC_NEG_020_invalidTimezone":     { "legalTimezone": "INVALID_TZ"                  }
+  }
+}

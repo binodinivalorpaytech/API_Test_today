@@ -1,0 +1,95 @@
+{
+  "validPayload": {
+    "newUserId": "72239",
+    "mp_id": "43919",
+    "legalName": "EPX Store 6a",
+    "dbaName": "EPX Store 6a",
+    "firstName": "MERCHANT",
+    "lastName": "EPX Store 6a",
+    "emailId": "name@protonmail.com",
+    "userName": "merchant010823",
+    "mobile": "8327287578",
+    "legalAddress": "Test Address",
+    "legalCity": "CLIFFSIDE PARK",
+    "legalState": "NY",
+    "legalCountry": "US",
+    "legalZipCode": "07010",
+    "legalTimezone": "EST",
+    "role": "10",
+    "userType": "4",
+    "isTxnAllowed": "1",
+    "selectedState": "NY",
+    "programType": "1",
+    "processor": "9",
+    "rollUp": "0",
+    "storeData": [
+      {
+        "storeName": "Test Store",
+        "storeAddress": "Test Address",
+        "storeCity": "CLIFFSIDE PARK",
+        "storeState": "NJ",
+        "storeCountry": "US",
+        "storeZipCode": "07010",
+        "storeTimezone": "EST",
+        "superVisorName": "MERCHANT PORTAL LOGIN",
+        "superVisorEmail": "test@email.com",
+        "mccCode": "0742",
+        "selectedMCC": "7230 - Beauty and Barber",
+        "superVisorContact": "2345678976",
+        "epiData": [
+          {
+            "deviceType": "Soft POS",
+            "processor": "9"
+          }
+        ]
+      }
+    ]
+  },
+
+  "validPayloadMinimalStoreData": {
+    "newUserId": "72240",
+    "mp_id": "43919",
+    "legalName": "EPX Store Minimal",
+    "dbaName": "EPX Store Minimal",
+    "firstName": "MERCHANT",
+    "lastName": "Minimal",
+    "emailId": "minimal@protonmail.com",
+    "userName": "merchantminimal01",
+    "mobile": "9876543210",
+    "legalAddress": "Minimal Address",
+    "legalCity": "NEW YORK",
+    "legalState": "NY",
+    "legalCountry": "US",
+    "legalZipCode": "10001",
+    "legalTimezone": "EST",
+    "role": "10",
+    "userType": "4",
+    "isTxnAllowed": "1",
+    "selectedState": "NY",
+    "programType": "1",
+    "processor": "9",
+    "rollUp": "0",
+    "storeData": [
+      {
+        "storeName": "Minimal Store",
+        "storeAddress": "Minimal Address",
+        "storeCity": "NEW YORK",
+        "storeState": "NY",
+        "storeCountry": "US",
+        "storeZipCode": "10001",
+        "storeTimezone": "EST",
+        "superVisorName": "MINIMAL SUPERVISOR",
+        "superVisorEmail": "minimal.supervisor@example.com",
+        "mccCode": "0742",
+        "selectedMCC": "7230 - Beauty and Barber",
+        "superVisorContact": "9876543210",
+        "epiData": [
+          {
+            "deviceType": "Soft POS",
+            "processor": "9"
+          }
+        ]
+      }
+    ]
+  }
+}

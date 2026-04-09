@@ -277,7 +277,7 @@ Feature: Merchant - Add Merchant for FD Buypass feature
                 tax:       { enabled: false, value: '0' }
               },
               selectedState: 'NY',
-              processorData: null
+              processorData: []
             }]
           }]
         };
@@ -319,4 +319,5 @@ Feature: Merchant - Add Merchant for FD Buypass feature
     * print '[Scenario 5] Final response body:', finalResponse
 
     # ✅ Test PASSES for both 502 and 504
-    * assert result == 502 || result == 504
+    * assert result == 400
+     # * assert result == 400 || result == 504

@@ -1,0 +1,88 @@
+{
+    "legalName": "Valor Store",
+    "dbaName": "Valor Store LLC",
+    "firstName": "MERCHANT",
+    "lastName": "PORTAL",
+    "ownerName": "MERCHANT PORTAL",
+    "emailId": "name@protonmail.com",
+    "userName": "merchat310823",
+    "mobile": "8327287578",
+    "legalAddress": "Test Address",
+    "legalCity": "CLIFFSIDE PARK",
+    "legalState": "NJ",
+    "legalCountry": "US",
+    "legalZipCode": "07010",
+    "legalTimezone": "EST",
+    "role": "10",
+    "userType": 4,
+    "isTxnAllowed": "1",
+    "businessType": "Direct Marketing",
+    "selectedState": "NJ",
+    "processor": "11",
+    "rollUp": "1",
+    "programType": "1",
+    "storeData": [
+      {
+        "storeName": "EL TRI MX RESTA Add",
+        "storeAddress": "4100 JOHNSTON ST",
+        "storeCity": "LAFAYETTE",
+        "storeState": "LA",
+        "storeCountry": "US",
+        "storeZipCode": "70503",
+        "storeTimezone": "EST",
+        "superVisorName": "EL TRI MX RESTA",
+        "superVisorEmail": "office@valorpaytech.com",
+        "superVisorContact": "3377040344",
+        "mccCode": "5812",
+        "epiData": [
+          {
+            "device": "139",
+            "deviceType": "Soft POS",
+            "processor": "11",
+            "epiLabel": "VT",
+            "features": {
+              "tip": {
+                "enabled": false,
+                "value": [5, 10, 15, 20]
+              },
+              "surcharge": {
+                "enabled": false,
+                "value": "4.00"
+              },
+              "tax": {
+                "enabled": false,
+                "value": "0"
+              }
+            },
+            "selectedState": "NJ",
+            "processorData": [
+              {
+                "midWorldpay": "123456789012",
+                "midWorldpay1": "",
+                "termNoWorldpay": "123",
+                "termNoWorldpay1": "",
+                "bankIdWorldpay": "1235",
+                "bankIdWorldpay1": "",
+                "EBTcash": 0,
+                "EBTcash1": 0,
+                "EBTfood": 0,
+                "EBTfood1": 0,
+                "surchargeIndicator": 0,
+                "surchargePercentage": "3.000",
+                "label": "MERCHANT PORTAL LOGIN",
+                "programType": "surcharge",
+                "c_nameWorldpay3": "1",
+                "tidWorldpay3": "5454",
+                "clientID_Worldpay": "455",
+                "mid_flexfactor": "123",
+                "tid_flexfactor": "12345678",
+                "site_id_flexfactor": "1234567890",
+                "app_key_flexfactor": "1234567890",
+                "app_secret_flexfactor": "1234567890"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

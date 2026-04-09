@@ -1,0 +1,83 @@
+{
+  "legalName": "",
+  "dbaName": "EPX Store Invalid",
+  "firstName": "M",
+  "lastName": "",
+  "emailId": "invalid-email-format",
+  "userName": "m",
+  "mobile": "123",
+  "legalAddress": "",
+  "legalCity": "UNKNOWN CITY",
+  "legalState": "ZZ",
+  "legalCountry": "INVALID",
+  "legalZipCode": "00000",
+  "legalTimezone": "INVALID_TZ",
+  "role": "999",
+  "userType": "99",
+  "isTxnAllowed": "2",
+  "businessType": "",
+  "processor": "999",
+  "programType": "99",
+  "rollUp": "5",
+  "storeData": [
+    {
+      "storeName": "",
+      "storeAddress": "",
+      "storeCity": "INVALID",
+      "storeState": "XX",
+      "storeCountry": "INVALID",
+      "storeZipCode": "INVALID",
+      "storeTimezone": "INVALID_TZ",
+      "superVisorName": "",
+      "superVisorEmail": "not-an-email",
+      "superVisorContact": "000",
+      "mccCode": "9999",
+      "epiData": [
+        {
+          "device": "999",
+          "deviceType": "Invalid Device",
+          "processor": "999",
+          "epiLabel": "",
+          "features": {
+            "tip": {
+              "enabled": true,
+              "value": [
+                0
+              ]
+            },
+            "surcharge": {
+              "enabled": true,
+              "value": "999.99"
+            },
+            "tax": {
+              "enabled": true,
+              "value": "-10"
+            }
+          },
+          "selectedState": "XX",
+          "processorData": [
+            {
+              "midEPX": "",
+              "midEPX1": "",
+              "termNoEPX": "",
+              "termNoEPX1": "",
+              "custId": "",
+              "custId1": "",
+              "dbaNo": "",
+              "dbaNo1": "",
+              "EBTcash": "2",
+              "EBTcash1": "",
+              "EBTfood": "2",
+              "EBTfood1": "",
+              "EbtNoEPX": "",
+              "EbtNoEPX1": "",
+              "surchargePercentage": "999.999",
+              "programType": "invalid_type",
+              "label": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

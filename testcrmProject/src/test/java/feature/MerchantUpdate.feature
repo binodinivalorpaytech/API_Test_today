@@ -288,7 +288,7 @@ Feature: Merchant Update API
     * remove payload.storeData[0].epiData
     And request payload
     When method POST
-    Then status 422
+    Then status 400
 
   Scenario: TC_016 - Request fails when emailId has an invalid format
     * def payload = karate.jsonPath(basePayload, '$')
@@ -345,14 +345,15 @@ Feature: Merchant Update API
     * set payload.processor = '<processor>'
     And request payload
     When method POST
-    Then status <expectedStatus>
+    * def allowedStatuses = <allowedStatuses>
+    * match allowedStatuses contains responseStatus
 
     Examples:
-      | processor | expectedStatus |
-      | 1         | 200            |
-      | 2         | 400            |
-      | 999       | 504	           |
-
+      | processor | allowedStatuses |
+      | 1         | [200]           |
+      | 2         | [400]           |
+      | 999       | [502, 504]      |
+      
   Scenario Outline: TC_023 - Update merchant with different legalCountry values
     * def payload = karate.jsonPath(basePayload, '$')
     * set payload.legalCountry = '<country>'

@@ -1,0 +1,42 @@
+[
+  {
+    "description": "Valid UserId",
+    "UserId": 41980,
+    "expectedStatus": 200
+  },
+  {
+    "description": "Invalid non-existent UserId",
+    "UserId": 999999999,
+    "expectedStatus": 404
+  },
+  {
+    "description": "Missing UserId - empty body",
+    "UserId": null,
+    "expectedStatus": 400
+  },
+  {
+    "description": "Empty string UserId",
+    "UserId": "",
+    "expectedStatus": 400
+  },
+  {
+    "description": "Negative UserId",
+    "UserId": -1,
+    "expectedStatus": 400
+  },
+  {
+    "description": "Zero UserId",
+    "UserId": 0,
+    "expectedStatus": 400
+  },
+  {
+    "description": "Non-numeric UserId",
+    "UserId": "ABCXYZ",
+    "expectedStatus": 422
+  },
+  {
+    "description": "Large boundary UserId",
+    "UserId": 9999999999999,
+    "expectedStatus": 404
+  }
+]

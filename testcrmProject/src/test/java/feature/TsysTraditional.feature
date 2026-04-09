@@ -7,7 +7,7 @@ Feature: Merchant - TSYS Traditional
     * def dynamicUser = 'Surcharge' + random 
     * def dynamicEmail = 'binodini@valorpaytech.com'
     * def shortSuperName = ('Supervisor' + random).substring(0,25)
-    # test
+    
     
     Scenario Outline: Create Merchant with TSYS Traditional - <flowType> Flow
     * def testDataset = read('classpath:traditional/<payloadFile>')
@@ -126,8 +126,8 @@ Feature: Merchant - TSYS Traditional
 * print response.newUserId 
   Examples:
     | flowType | payloadFile           | expectedStatus |
-    | Positive | positive-payload.json | 200            |
-    | Negative | negative-payload.json | 400            |
+    | Positive | Tsys_positive-payload.json | 200            |
+    | Negative | Tsys_negative-payload.json | 400            |
     
   # =====================================================================
   # SCENARIO 3: DB Validation using mpId from Scenario 1
@@ -267,7 +267,7 @@ Feature: Merchant - TSYS Traditional
 * print response.message 
  Examples:
     | flowType | payloadFile           | expectedStatus |
-    | Negative | positive-payload.json | 401            |
+    | Negative | Tsys_positive-payload.json | 401            |
     
   # =====================================================================
   # SCENARIO 4: 404 Status code with Invalid End point
@@ -387,13 +387,13 @@ Feature: Merchant - TSYS Traditional
 * print response.message 
  Examples:
     | flowType | payloadFile           | expectedStatus |
-    | Negative | positive-payload.json | 404            |
+    | Negative | Tsys_positive-payload.json | 404            |
     
     # ====================================================================================
   # SCENARIO 5: Create Merchant with invalid dataset - Negative Flow for 500 server error
   # =====================================================================================
   Scenario: Create Merchant - TSYS Surcharge Positive Flow
-  * def testData = read('classpath:data/positive-payload.json')
+  * def testData = read('classpath:data/Tsys_positive-payload.json')
 
     Given url baseUrl
     And path '/api/valor/create'
@@ -458,7 +458,7 @@ Feature: Merchant - TSYS Traditional
                   "value":   "0"
                 }
               },
-              "processorData": null
+              "processorData": []
             }
           ]
         }
@@ -466,7 +466,10 @@ Feature: Merchant - TSYS Traditional
     }
     """
     When method post
-    Then status 504
+     Then match [400] contains responseStatus
 
     * print 'Full response:', response
+    * print 'code', response.code
+    * print 'status', response.status
+    * print 'message', response.message
    

@@ -7,6 +7,7 @@ class TestRunner1 {
 
     @Karate.Test
     Karate runDb() {
-            	return Karate.run("classpath:feature/MerchantFDPass.feature");
+            	return Karate.run("classpath:feature/MerchantOperatorCreate.feature");
+            	
 }
 }

@@ -1,0 +1,79 @@
+{
+  "legalName": "Valor Store",
+  "dbaName": "Valor Store LLC",
+  "firstName": "MERCHANT",
+  "lastName": "PORTAL",
+  "ownerName": "MERCHANT PORTAL",
+  "mobile": "8327287578",
+  "legalAddress": "Test Address",
+  "legalCity": "CLIFFSIDE PARK",
+  "legalState": "NJ",
+  "legalCountry": "US",
+  "legalZipCode": "07010",
+  "legalTimezone": "EST",
+  "role": "10",
+  "userType": 4,
+  "isTxnAllowed": "1",
+  "businessType": "Direct Marketing",
+  "selectedState": "NJ",
+  "processor": "14",
+  "rollUp": "1",
+  "programType": "2",
+  "storeData": [
+    {
+      "storeName": "EL TRI MX RESTA Add",
+      "storeAddress": "4100 JOHNSTON ST",
+      "storeCity": "LAFAYETTE",
+      "storeState": "LA",
+      "storeCountry": "US",
+      "storeZipCode": "70503",
+      "storeTimezone": "EST",
+      "superVisorName": "EL TRI MX RESTA",
+      "superVisorEmail": "office@valorpaytech.com",
+      "superVisorContact": "2345678976",
+      "mccCode": "5812",
+      "epiData": [
+        {
+          "device": "139",
+          "deviceType": "Soft POS",
+          "processor": "14",
+          "epiLabel": "VT",
+          "features": {
+            "tip": {
+              "enabled": false,
+              "value": [5, 10, 15, 20]
+            },
+            "surcharge": {
+              "enabled": false,
+              "value": "4.00"
+            },
+            "tax": {
+              "enabled": false,
+              "value": "0"
+            }
+          },
+          "selectedState": "NJ",
+          "processorData": [
+            {
+              "midPayroc": "12345678",
+              "mid1Payroc": "12345678",
+              "termNoPayroc": "1234567",
+              "termNoPayroc1": "11234567",
+              "EBTcash": "0",
+              "EBTcash1": "0",
+              "EBTfood": "0",
+              "EBTfood1": "0",
+              "surchargeIndicator": "1",
+              "surchargePercentage": "1.000",
+              "label": "MERCHANT PORTAL LOGIN",
+              "programType": "surcharge",
+              "c_namePayroc3": "1",
+              "tidPayroc3": "611525",
+              "clientID_Payroc": "45c4ddcc-feb1-4cb1-99f0-1ba71d6d8f69"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

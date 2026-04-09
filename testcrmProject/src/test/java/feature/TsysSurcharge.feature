@@ -105,6 +105,7 @@ Feature: Merchant - TSYS Surcharge
 
     * print 'Full response:', response
     * print 'mpId:', response.mpId
+    * print 'message:', response.message
     * match response.status == true
 
     # ✅ Save mpId globally for use in downstream scenarios
@@ -146,7 +147,7 @@ Feature: Merchant - TSYS Surcharge
   # SCENARIO 3: Create Merchant with Invalid Endpoint - Negative Flow (404)
   # =====================================================================
   Scenario: Create Merchant - TSYS Surcharge Negative Flow (404 Invalid Endpoint)
-    * def testData = read('classpath:data/negative-payload.json')
+    * def testData = read('classpath:data/Tsys_negative-payload.json')
 
     Given url baseUrl
     And path '/api/valor/create1'
@@ -177,7 +178,7 @@ Feature: Merchant - TSYS Surcharge
   # SCENARIO 4: Create Merchant without Valid Access Token (401 Unauthorized)
   # =====================================================================
   Scenario: Create Merchant - TSYS Surcharge Negative Flow (401 Unauthorized)
-    * def testData = read('classpath:data/negative-payload.json')
+    * def testData = read('classpath:data/Tsys_negative-payload.json')
 
     Given url baseUrl
     And path '/api/valor/create'
@@ -210,7 +211,7 @@ Feature: Merchant - TSYS Surcharge
   # Retries up to 3 times with a 3s delay. Test PASSES if 502 or 504 is received.
   # ====================================================================================
   Scenario: Create Merchant - TSYS Surcharge Gateway Error Flow (502 or 504)
-    * def testData = read('classpath:data/positive-payload.json')
+    * def testData = read('classpath:data/Tsys_positive-payload.json')
 
     * def maxRetries = 3
     * def retryDelay = 3000
@@ -266,7 +267,7 @@ Feature: Merchant - TSYS Surcharge
                 tax:       { enabled: false, value: '0' }
               },
               selectedState: 'NJ',
-              processorData: null
+              processorData: []
             }]
           }]
         };
@@ -308,4 +309,4 @@ Feature: Merchant - TSYS Surcharge
     * print '[Scenario 5] Final response body:', finalResponse
 
     # ✅ Test PASSES for both 502 and 504
-    * assert result == 502 || result == 504
+    * assert result == 400

@@ -1,0 +1,26 @@
+ {
+    "legalName": "Valor Store",
+    "dbaName": "Valor Store LLC",
+    "firstName": "MERCHANT",
+    "lastName": "PORTAL",
+    "ownerName": "MERCHANT PORTAL",
+    "emailId": "name@protonmail.com",
+    "userName": "merchat53810823",
+    "mobile": "8327287578",
+    "legalAddress": "Test Address",
+    "legalCity": "CLIFFSIDE PARK",
+    "legalState": "NJ",
+    "legalCountry": "US",
+    "legalZipCode": "07010",
+    "legalTimezone": "EST",
+    "role": "10",
+    "userType": 4,
+    "isTxnAllowed": "1",
+    "businessType": "Direct Marketing",
+    "selectedState": "NJ",
+    "processor": "6",
+    "rollUp": "1",
+    "programType": "2"
+  }
+
+  

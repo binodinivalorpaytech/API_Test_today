@@ -1,0 +1,81 @@
+{
+  "legalName": "EPX Store 6a",
+  "dbaName": "EPX Store 6a",
+  "firstName": "MERCHANT",
+  "lastName": "EPX Store 6a",
+  "emailId": "name@protonmail.com",
+  "userName": "merchat4310823",
+  "mobile": "8327287578",
+  "legalAddress": "Test Address",
+  "legalCity": "CLIFFSIDE PARK",
+  "legalState": "NY",
+  "legalCountry": "US",
+  "legalZipCode": "07010",
+  "legalTimezone": "EST",
+  "role": "10",
+  "userType": "4",
+  "isTxnAllowed": "1",
+  "selectedState": "NY",
+  "programType": "1",
+  "processor": "9",
+  "rollUp": "0",
+  "storeData": [
+    {
+      "storeName": "EL TRI MX RESTA Add",
+      "storeAddress": "4100 JOHNSTON ST",
+      "storeCity": "LAFAYETTE",
+      "storeState": "LA",
+      "storeCountry": "US",
+      "storeZipCode": "70503",
+      "storeTimezone": "EST",
+      "superVisorName": "EL TRI MX RESTA",
+      "superVisorEmail": "office@valorpaytech.com",
+      "superVisorContact": "3377040344",
+      "mccCode": "5812",
+      "epiData": [
+        {
+          "device": "139",
+          "deviceType": "Soft POS",
+          "processor": "9",
+          "epiLabel": "VT",
+          "features": {
+            "tip": {
+              "enabled": false,
+              "value": [
+                5,
+                10,
+                15,
+                20
+              ]
+            },
+            "surcharge": {
+              "enabled": false,
+              "value": "4.00"
+            },
+            "tax": {
+              "enabled": false,
+              "value": "0"
+            }
+          },
+          "selectedState": "NJ",
+          "processorData": [
+            {
+              "midPriority": "RCTST1000089931",
+              "midPriority1": "",
+              "termNoPriority": "12345678",
+              "termNoPriority1": "",
+              "consumerApiKeyPriority": "12345678910",
+              "consumerApiKeyPriority1": "",
+              "consumerApiSecretPriority": "1234567890",
+              "consumerApiSecretPriority1": "",
+              "surchargeIndicator": 0,
+              "surchargePercentage": "4.00",
+              "label": "MERCHANT PORTAL LOGIN",
+              "programType": "surcharge"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

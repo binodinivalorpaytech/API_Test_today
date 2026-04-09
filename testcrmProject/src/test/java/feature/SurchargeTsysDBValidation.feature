@@ -13,7 +13,7 @@ Feature: Merchant Validation in DB
   Scenario: Create Merchant and Validate in DB
 
     # ── Load test data ──────────────────────────────────────────────────────────
-    * def testData = read('classpath:data/positive-payload.json')
+    * def testData = read('classpath:data/Tsys_positive-payload.json')
 
     # ── Step 1: Create Merchant via API ─────────────────────────────────────────
     Given url baseUrl
